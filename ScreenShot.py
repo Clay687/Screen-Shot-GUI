@@ -59,7 +59,7 @@ def capture():
         
             screen.save(f"C:\\Users\\prince\\Desktop\\GUI\\{name.get()}.png")
             root.state('zoomed')
-            showinfo("Svaed","Screen shot have been saved\nwith name SnapClick.png\nat current location.")
+            showinfo("Svaed",f"Screen shot have been saved\nwith name {name.get()}.png\nat current location.")
 
     elif directory!=0:
         if name.get()=="":
@@ -84,7 +84,7 @@ def capture():
         
             screen.save(f"{directory}\{name.get()}.png")
             root.state('zoomed')
-            showinfo("Saved",f"Screen shot have been saved\nwith name SnapClick.png\nat specified location.")
+            showinfo("Saved",f"Screen shot have been saved\nwith name {name.get()}.png\nat specified location.")
 
 select_loc = Button(root,text="Location",font="Magneto 15",fg="blue",command=select)
 select_loc.place(x=20,y=150)
